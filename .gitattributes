@@ -1,0 +1,7 @@
+# The CSV is byte for byte what njstravel.com/data/resort-fees.csv serves:
+# CRLF record ends (RFC 4180). Never let git rewrite them.
+*.csv -text
+# Everything else is plain text with LF endings.
+*.md text eol=lf
+*.json text eol=lf
+*.cff text eol=lf
