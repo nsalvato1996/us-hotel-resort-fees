@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "US hotel resort fees, as each hotel states them"
+type: dataset
+authors:
+  - name: "NJSTravel"
+url: "https://njstravel.com/methodology"
+license: CC-BY-4.0
+date-released: "2026-10-10"
