@@ -1,16 +1,16 @@
 # US hotel resort fees, as each hotel states them
 
-What 2,703 hotels in 62 US cities and towns say on
+What 2,700 hotels in 62 US cities and towns say on
 their own websites (or their brand's) about a mandatory nightly resort,
 destination, amenity or facility fee. Every answer carries the page it came
 from and the day it was read; a hotel whose site could not be read, or did
-not say, is listed as unconfirmed. Read through 2026-10-10.
+not say, is listed as unconfirmed. Read through 2026-10-15.
 
 | | Hotels |
 |---|---:|
-| State a mandatory fee | 502 |
+| State a mandatory fee | 498 |
 | State they charge none | 81 |
-| Could not be confirmed | 2120 |
+| Could not be confirmed | 2121 |
 
 Maintained by [NJSTravel](https://njstravel.com), a US hotel booking site that ranks every
 hotel by its true total price. How each row is read and checked:
@@ -35,9 +35,14 @@ hotel by its true total price. How each row is read and checked:
   fee as stated.
 - **A second charge is listed, never summed** (`also_charges`), in the
   hotel's words, because not every such sentence gives a per-night basis.
+- **A charge once per stay is listed, never per night** (`per_stay_charges`,
+  the last column; `perStayCharges` in the JSON): a checkout cleaning fee or
+  a damage waiver, in the hotel's words. Never multiply it by nights, and read
+  the sentence: such a charge can depend on the unit ("$395 for one-bedrooms
+  ... $495 for two and three bedrooms").
 - **Dates matter.** Hotels change fees. Cite a row with its `checked_on`.
 
-## Licence and credit
+## License and credit
 
 [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
 Use it, republish it, build on it; credit **NJSTravel** and link
